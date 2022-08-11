@@ -10,4 +10,4 @@
 
 💙 Join the channel to see more videos like this. [Coding-SDN](https://www.youtube.com/channel/UCAMqPSYvnpmnsFYBjdDrDuQ)
 
-<!-- ![preview img](/preview.png) -->
+![preview img](/preview.png)
