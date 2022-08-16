@@ -142,6 +142,28 @@ const sr = ScrollReveal({
     reset: true
 })
 
-sr.reveal(`.home__data`)
-sr.reveal(`.home__handle`, {delay: 700})
-sr.reveal(`.home__social, .home__scroll`, {delay: 900, origin: 'bottom'})
+// sr.reveal(`.home__data`)
+// sr.reveal(`.home__handle`, {delay: 700})
+// sr.reveal(`.home__social, .home__scroll`, {delay: 900, origin: 'bottom'})
+
+/*=============== EMAILJS ===============*/
+const btn = document.getElementById('contact-button');
+
+document.getElementById('contact-form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Sending...';
+
+   const serviceID = 'service_0dj4xzc';
+   const templateID = 'template_c58pn76';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Send Email';
+      alert('Sent!');
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
+});

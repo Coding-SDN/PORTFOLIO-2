@@ -646,21 +646,21 @@
                     <div class="contact__content">
                         <h3 class="contact__title">Write me your project</h3>
     
-                        <form action="" class="contact__form">
+                        <form action="" class="contact__form" id="contact-form">
                             <div class="contact__form-div">
                                 <label for="" class="contact__form-tag">Pseudo's</label>
-                                <input type="text" placeholder="Insert your Pseudo" class="contact__form-input" value="STEEVEMX98">
+                                <input type="text" placeholder="Insert your Pseudo" name="from_name" id="from_name" class="contact__form-input">
                             </div>
                             <div class="contact__form-div">
                                 <label class="contact__form-tag">Mail</label>
-                                <input type="email" placeholder="Insert your email" class="contact__form-input" value="steevenana98@gmail.com">
+                                <input type="email" placeholder="Insert your email" name="email_id" id="email_id" class="contact__form-input">
                             </div>
                             <div class="contact__form-div contact__form-area">
                                 <label for="" class="contact__form-tag">Project</label>
-                                <textarea name="" id="" cols="30" rows="10" placeholder="Write your project" class="contact__form-input">HELLO MAN NICE TO MEET YOU THERE'S A PROJECT I DREAMED SHOWING YOU FOLLOW LINK sdn-portfolio-2.herokuapp.com. THEN DON'T FORGET YO LIKE  ♥︎♥︎♥︎, SUBSCRIBE THEN COMMENT & SHARE.</textarea>
+                                <textarea name="message" id="" cols="30" rows="10" placeholder="Write your project" itemid="message" class="contact__form-input"></textarea>
                             </div>
     
-                            <button class="button">Send DM</button>
+                            <button type="submit" class="button" id="contact-button">Send DM</button>
                         </form>
                     </div>
 
@@ -716,6 +716,12 @@
 
         <!--=============== MIXITUP FILTER ===============-->
         <script src="assets/js/mixitup.min.js"></script>
+
+         <!--=============== EMAILJS ===============-->
+         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+         <script type="text/javascript">
+             emailjs.init('3Za3SzlUeCu7duEi-');
+           </script>
 
         <!--=============== MAIN JS ===============-->
         <script src="assets/js/main.js"></script>
